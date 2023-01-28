@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My favourite anime</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <img src="Resources/itadori.jpg" alt="bg-img-itadori">
+        <p>My top 3 Anime tier list</p>
+    </div>
+    <div class="carousel">
+        <button class="carousel__button carousel__button--left is-hidden">
+            <img src="Resources/left-arrow.png" alt="left-arrow">
+        </button>
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img class="carousel__image" src="Resources/haikyuu.jpg" alt="haikyuu-image">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="Resources/one-piece.jpg" alt="one-piece-image">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="Resources/attack-on-titan.jpg" alt="attack-on-titan-image">
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right">
+            <img src="Resources/right-arrow.png" alt="right-arrow">
+        </button>
+        <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

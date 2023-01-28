@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    background-color: rgba(1, 9, 22, 0.7);
+}
+
+.title-container{
+    display: flex;
+    margin: 0 auto 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container img{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.title-container p{
+    font-family: 'Caveat', cursive;
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel {
+    position: relative;
+    height: 600px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*new stuff*/
+}
+
+.carousel__track-container {
+    background: lightblue;
+    height: 100%;
+    position: relative;
+    overflow: hidden;  /*new*/
+}
+
+.carousel__track {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0; /*cause borders always have borders on them*/
+    cursor: pointer;
+}
+
+.carousel__button--left{
+    left: -30px;
+}
+
+.carousel__button--right {
+    right: -30px;
+}
+
+.carousel__button img {
+    width: 13px;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    background-color: rgba(0,0,0, 0.3);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.is-hidden{
+    display: none;
+}
